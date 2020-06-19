@@ -1,0 +1,11 @@
+.menu-button:hover{
+background-color:dodgerblue;
+ }
+ .logout-icon {
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.logout-spacer {
+  flex: 1 1 auto;
+}

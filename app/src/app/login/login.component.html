@@ -1,0 +1,23 @@
+<div class="login-row">
+  <div class="username">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your username</mat-label>
+    <input matInput [type]="'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+  </mat-form-field>
+</div>
+<div class="password">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+  </div>
+  <div>
+    <button mat-button class="menu-button" color="primary" (click)="login()">Login</button>
+  </div>
+</div>
